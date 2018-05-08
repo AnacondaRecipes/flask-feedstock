@@ -17,7 +17,6 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - flask = flask.cli:main
-  noarch: python
 
 requirements:
   host:
