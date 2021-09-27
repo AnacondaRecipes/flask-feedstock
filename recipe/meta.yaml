@@ -52,7 +52,7 @@ about:
     Flask is a microframework for Python based on Werkzeug and Jinja2. It's
     intended for getting started very quickly and was developed with best
     intentions in mind.
-  doc_url: http://flask.pocoo.org/docs/1.0/
+  doc_url: https://flask.palletsprojects.com/en/2.0.x/
   doc_source_url: https://github.com/pallets/flask/blob/master/docs/index.rst
   dev_url: https://github.com/pallets/flask
 
