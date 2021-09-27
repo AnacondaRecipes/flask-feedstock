@@ -1,5 +1,5 @@
 {% set name = "Flask" %}
-{% set version = "1.1.2" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060
+  sha256: 1c4c257b1892aec1398784c63791cbaa43062f1f7aeb555c4da961b20ee68f55
 
 build:
   number: 0
@@ -22,21 +22,25 @@ requirements:
     - python
     - pip
     - setuptools
+    - wheel
 
   run:
     - python
-    - click >=5.1
-    - itsdangerous >=0.24
-    - jinja2 >=2.10.1
-    - werkzeug >=0.15
+    - click >=7.1.2
+    - itsdangerous >=2.0
+    - jinja2 >=3.0
+    - werkzeug >=2.0
 
 test:
+  requires:
+    - pip
   imports:
     - flask
     - flask.json
 
   commands:
     - flask --help
+    - pip check
 
 about:
   home: http://flask.pocoo.org
