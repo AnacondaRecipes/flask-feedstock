@@ -34,17 +34,15 @@ requirements:
 test:
   requires:
     - pip
-    - python <3.10
   imports:
     - flask
     - flask.json
-
   commands:
     - flask --help
     - pip check
 
 about:
-  home: http://flask.pocoo.org
+  home: https://flask.pocoo.org
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE.rst
