@@ -12,6 +12,7 @@ source:
 
 build:
   number: 0
+  skip: True # [py<37]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - flask = flask.cli:main
@@ -25,8 +26,7 @@ requirements:
   run:
     - python
     - click >=8.0
-    # should be py<310 but we want to keep this noarch: python
-    - importlib-metadata  >=3.6.0
+    - importlib-metadata >=3.6.0  # [py<310]
     - itsdangerous >=2.0
     - jinja2 >=3.0
     - werkzeug >=2.0
