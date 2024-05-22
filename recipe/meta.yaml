@@ -52,7 +52,6 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  license_url: https://github.com/pallets/flask/blob/main/LICENSE.rst
   summary: A simple framework for building complex web applications.
   description: |
     Flask is a lightweight [WSGI](https://wsgi.readthedocs.io/) web application framework. It is designed
