@@ -1,1 +1,2 @@
-aggregate_branch: 3.12
+channels:
+  - https://staging.continuum.io/prefect/fs/werkzeug-feedstock/pr10/32826d1
