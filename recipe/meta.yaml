@@ -41,10 +41,13 @@ test:
     - tests
   requires:
     - pip
-    - pytest
+    # collection failure on tests/test_cli.py with newer version of pytest (remove once no longer an issue)
+    - pytest <9
     - asgiref
     - greenlet  # [py<311]
     - python-dotenv
+    # test_bad_environ_raises_bad_request relies on older version behavior (remove once adjusted)
+    - werkzeug <3.1.9
   commands:
     - flask --help
     - pip check
